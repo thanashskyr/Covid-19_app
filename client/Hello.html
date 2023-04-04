@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html Lang="en">
+
+    <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 5px solid rgb(2, 94, 155);
+          border-radius: 4px ;
+          box-sizing: border-box;
+       }
+        
+        body  {
+        background-image: url("../136920.webp");
+        background-color: #cccccc;
+        }
+        
+        .button {
+        background-color: #173b70;
+        border: 2px solid rgb(84, 227, 252);
+        border-radius: 8px;
+        padding: 5px;
+        color: rgb(255, 255, 255);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+        
+        div {
+          background-image: url("../136920.webp");
+          border-radius: 5px;
+          background-color: #8b8b8b;
+          padding: 20px;
+          /* border: 2px solid rgb(171, 180, 187); */
+        } 
+        
+        </style>
+<body>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>hello admin</title>
+</head>
+
+<body>
+
+    <h1 style="color:rgb(107, 172, 233);" >Hello Admin</h1>
+
+
+
+<div class = "form">
+    <form>
+    <h1 style="color:rgb(107, 172, 233);">create a poi</h1>
+    <div class="container">
+        <label><b>PoiName</b></label>
+        <input type="text" placeholder="Enter POI Name" id="PoiName" required>
+    
+        <label><b>PoiType</b></label>
+        <input type="text" placeholder="Enter POI Type" id="PoiType" required>
+
+        <label><b>Capacity</b></label>
+        <input type="text" placeholder="Enter POI Capacity" id="Capacity" required>
+
+        <label><b>latitude</b></label>
+        <input type="number" placeholder="Enter POI latitude" id="latitude" required>
+        <label><b>longtitude</b></label>
+        <input type="number" placeholder="Enter POI longtitude" id="longtitude" required>
+        <label><b>people at this POI</b></label>
+        <input type="number" placeholder="Enter people in this Poi" id="people"> 
+    
+       <button  class="button" id="CreatePoi">Create POI</button>
+       <button class="button" id="delete">delete all POIS</button>
+        
+    </div>
+</form>
+    <h1 style="color:rgb(107, 172, 233);">
+     modify a Poi
+    </h1>
+    <form>
+    <div>
+        <label><b>Poi to change</h1></label>
+        <input type="text" placeholder="which Poi you want to modify" id="PoiChange" required>
+        <br>
+        <br>
+
+        <label><b>change POI capacity</b></label>
+        <input type ="text" placeholder="new POI capacity" id="newCapacity" >
+        <button class="button" id="CapacityChange">submit your change</button>
+        <br>
+
+        <label><b>change POI Type &nbsp &nbsp &nbsp</b></label>
+        <input type ="text" placeholder="new POI type" id="newType" >
+        <button class="button" id="TypeChange">submit your change</button>
+        <br>
+
+        <label><b>change POI Traffic &nbsp </b></label>
+        <input type ="text" placeholder="new POI traffic" id="newTraffic" >
+        <button class="button" id="TrafficChange">submit your change</button>
+        <br>
+    </div>
+</form>
+    
+    <script type = "text/javascript" src="./hello.js"></script>
+
+</body>
+</html>

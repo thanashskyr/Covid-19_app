@@ -1,0 +1,10 @@
+{
+   
+    "web_db": {
+      "dbConfig": {
+        "host": "localhost",
+        "port": 5984,
+        "dbName": "mongodb+srv://takyr:takyr1234@cluster0.xlypm.mongodb.net/web_project2022_db?retryWrites=true&w=majority"
+      }
+    }
+}

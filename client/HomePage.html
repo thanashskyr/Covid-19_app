@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        input[type=text], select {
+          width: 30%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 5px solid rgb(2, 94, 155);
+          border-radius: 4px ;
+          box-sizing: border-box;
+       }
+        
+        body  {
+        background-image: url("../136920.webp");
+        background-color: #cccccc;
+        }
+        
+        .button {
+        background-color: #173b70;
+        border: 2px solid rgb(84, 227, 252);
+        border-radius: 8px;
+        padding: 5px;
+        color: rgb(255, 255, 255);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+        
+        form {
+          background-image: url("../136920.webp");
+          border-radius: 5px;
+          background-color: #8b8b8b;
+          padding: 20px;
+          /* border: 2px solid rgb(171, 180, 187); */
+        } 
+        
+        </style>
+
+
+
+
+    <head>
+        <title>userPage</title>
+        <link rel="stylesheet" href="HomePage.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+</head>
+
+
+<body style="text-align:center">
+    
+    <div class = "topnav">
+        <div class = "topLeftGreeting">
+            <h1>Hello</h1>
+            <h1 id = "name">hello</h1>
+            
+        </div>
+
+        <div class = "navigationOptions">
+            <a class = "active" href = "HomePage.html">Home</a>
+            
+        </div>
+    </div>
+       <br>
+       <input type="text" placeholder="change username" id="uname">
+       <input type="text" placeholder="change password" id="pword">
+       <button  class="button" id="changeCred">change credentials</button> 
+   
+        
+        
+      
+            <input id="poiSend" type="text" placeholder="Search a POI.." name="search">
+            <button class="button" id="searchPOI" >Search POI</button>
+            <button class="button" id="showAllPOIs">Show All POIs</button>
+            <button class="button" id="clearAllPOIs">Clear All POIs</button>
+            <br>
+            <br>
+   
+
+<!-- poi estimation -->
+        <div class="form">
+            <div class="container">
+                
+                <h3 style="color:rgb(107, 172, 233);">Enter your estimation of people for a POI near you.</h1>
+                <label for="poiName"><p style="color:rgb(107, 172, 233);">POI name</p></label>
+                <input type="text" placeholder="Enter poi name" id="poiName" required>
+                <br>
+            
+                <label for="people"><b>people at this poi</b></label>
+                <input type="number" placeholder="Enter your estimation"  id="people" required>
+                <br>
+                <button class="button" id="submitEstimation">submit your estimation</button>
+                <br></br>
+                <br></br>
+
+                <label for="date"><b>date of positive test</b></label>
+                <input type="date" placeholder="Enter the date you had a positive test" id="date" required>
+                <button id="positive">I am positive at this date</button>
+                <br></br>
+                <button class="button" id="covidAlert">check if you had a contact with a positive person</button>
+                <br></br>
+                <br></br>
+             <div> 
+                <button class="button" id="showVisits">show all your visits</button>
+                <br></br>
+            
+                    <code>
+                        <h3 id = "visits"></h3>
+                        <h3 id=  "visitDates"></h3>
+                        <ul id="myItemList">
+                            <li id="li"></li>
+                         
+
+                        </ul>
+                    </code>
+               
+                
+              
+                
+             </div> 
+    
+            </div>
+          
+        <div id="map"></div>
+        <button class="button" id="logOutButton">Log Out</button>
+            <script type= "text/javascript" src="./logOut.js"></script>
+           
+        
+<script type = "text/javascript" src="./HomePage.js"></script>
+<script type= "text/javascript" src="./map.js"></script>
+    </body>
+</html>
+

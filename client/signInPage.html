@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html Lang= "en">
+<head>
+
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+    <link rel="stylesheet" href="login.css"/>
+    <title>Welcome - Sign In</title>
+
+</head>
+
+<body>
+
+    <div class="topnav">
+        <h2>Covid Information</h1>
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+      </div>
+
+    <div class = "form">
+        <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="username" required>
+        
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="password" required>
+
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" id="email" required>
+        
+            <button id="signin">Create Account</button>
+        </div>
+        
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>          
+            <a href='./logInPage.html' onclick="window.location('./logInPage.html'); return false">Already Registered</a>
+          </div>
+    </div>
+
+    <a href='./HomePage.html' onclick="window.location('./HomePage.html'); return false">see my profile</a>
+    <script type = "text/javascript" src="./signIn.js/"></script>
+</body>
+</html>
